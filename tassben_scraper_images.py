@@ -108,7 +108,7 @@ def scrape_all_products():
                 data = parse_product(link)
                 all_products.append(data)
                 print(f"   ✅ {data['nombre']}")
-                time.sleep(1)
+                time.sleep(2)
             except Exception as e:
                 print(f"   ⚠️ Error en {link}: {e}")
 
@@ -116,7 +116,7 @@ def scrape_all_products():
         if not next_page:
             break
         page_url = next_page
-        time.sleep(2)
+        time.sleep(3)
 
     # Guardar CSV
     with open(CSV_FILE, "w", newline="", encoding="utf-8") as f:
