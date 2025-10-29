@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tu cosmetóloga a la orden</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="stylesheet" href="base.css"> -->
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">Embellir</a>
+    <div class="logo-container">
+        <img src="./assets/img/logo/logoembellir.jpg" alt="Logo de la empresa">
+    </div>
+    
+    <input id="menu-toggle" type="checkbox" />
+    <label class="menu-btn" for="menu-toggle" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="nav">
+      <a href="#home" class="Home">Inicio</a>
+      <a href="#about" class="Nosotros">Nosotros</a>
+      <a href="#products" class="Productos">Productos</a>
+      <a href="#contact" class="Contacto">Contacto</a>
+      <a href="#carrito" class="carrito-compra"></a>
+      <a class="small" href="login.html">Iniciar sesión</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <h1>Estética Embellir. Tu cosmetológa amiga</h1>
+        <p>Productos eco-friendly para el día a día: cuidado personal, tratamientos personalizados y cosmetica natural.</p>
+        <a class="cta" href="#products">Ver productos</a>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>Por qué Embellir</h2>
+      <p>Seleccionamos productos con impacto ambiental reducido, envases reciclables y marcas locales comprometidas.</p>
+      <ul>
+        <li>Materiales biodegradables</li>
+        <li>Producción ética</li>
+        <li>Envíos neutros en carbono</li>
+      </ul>
+    </section>
+
+    <section id="products" class="products">
+      <h2>Productos destacados</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://via.placeholder.com/400x250?text=Producto+1" alt="Cepillo de bambú">
+          <h3>Cepillo de bambú</h3>
+          <p class="price">$599</p>
+          <a class="btn" href="#">Comprar</a>
+        </article>
+
+        <article class="card">
+          <img src="https://via.placeholder.com/400x250?text=Producto+2" alt="Jabón natural">
+          <h3>Jabón natural</h3>
+          <p class="price">$350</p>
+          <a class="btn" href="#">Comprar</a>
+        </article>
+
+        <article class="card">
+          <img src="https://via.placeholder.com/400x250?text=Producto+3" alt="Bolsa reutilizable">
+          <h3>Bolsa reutilizable</h3>
+          <p class="price">$250</p>
+          <a class="btn" href="#">Comprar</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contacto</h2>
+      <div class="contact-grid">
+        <form action="#" class="contact-form" novalidate>
+          <label>Nombre
+            <input type="text" name="name" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" required>
+          </label>
+          <label>Mensaje
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit">Enviar</button>
+        </form>
+
+        <div class="contact-info">
+          <p>Av. Sustentable 123, Ciudad Verde</p>
+          <p>Email: hola@embellir.com</p>
+          <p>Tel: +54 9 341 420-925</p>
+
+          <iframe src="https://www.google.com/maps?q=Rosario&output=embed" aria-hidden="false"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Embellir — Tu cosmetóloga amiga</p>
+    <p><a href="register.html">Crear cuenta</a></p>
+  </footer>
+</body>
+</html>
